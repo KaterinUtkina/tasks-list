@@ -1,0 +1,26 @@
+.accordion {
+    &.MuiPaper-root {
+        background-color: transparent;
+        box-shadow: none;
+        color: white;
+    }
+
+    .MuiAccordionSummary-root {
+        padding: 0;
+    }
+
+    .MuiAccordionSummary-content {
+        margin: 0;
+        align-items: center;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 600;
+    }
+    .MuiAccordionSummary-expandIconWrapper {
+        color: white;
+    }
+
+    .MuiAccordionDetails-root {
+        padding: 0;
+    }
+}

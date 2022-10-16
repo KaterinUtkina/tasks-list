@@ -1,0 +1,80 @@
+.task {
+    &--today {
+        .task__summary {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .MuiButtonBase-root {
+                padding: 0 10px 0 15px;
+            }
+        }
+    }
+    &__paper.MuiPaper-root {
+        background-color: #222222;
+        color: white;
+        box-shadow: 16px 16px 20px rgba(0, 0, 0, 0.15), -8px -8px 20px rgba(255, 255, 255, 0.05);
+        border-radius: 40px;
+        padding: 20px 36px 20px 15px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__decor {
+        display: block;
+        width: 5px;
+        height: 40px;
+        margin-right: 12px;
+        background: #A9A9A9;
+        border-radius: 3px;
+    }
+
+    .list-item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &:first-child {
+            .task__decor {
+                background-color: #FF0000;
+            }
+        }
+
+        &:nth-child(2) {
+            .task__decor {
+                background-color: #366EFF;
+            }
+        }
+
+        &:nth-child(3) {
+            .task__decor {
+                background-color: #FFEB33;
+            }
+        }
+
+        &__title {
+            margin: 0;
+            font-size: 28px;
+            line-height: 28px;
+            font-weight: 600;
+        }
+
+        &__description {
+            margin: 0;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
