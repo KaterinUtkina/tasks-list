@@ -1,0 +1,29 @@
+.news-ticker {
+    position: absolute;
+    padding: 10px 20px 10px 100%;
+    left: 0;
+    bottom: 0;
+    height: 38px;
+    background-color: #F4F4F4;
+
+    &__content {
+        display: flex;
+        animation: news-ticker-animation 3000s infinite linear;
+        white-space: nowrap;
+        color: black;
+
+        p {
+            margin: 0 20px;
+        }
+    }
+}
+
+@keyframes news-ticker-animation {
+    0%{
+        transform: translate(0, 0);
+    }
+
+    100%{
+        transform: translate(-160%, 0);
+    }
+}
