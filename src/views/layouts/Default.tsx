@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import TasksList from "../tasks/TasksList";
 import NewsTicker from "../news-ticker/NewsTicker";
+import {NewsTickerContext, NewsTickerContextType} from "../../provider/NewsTickerProvider";
 
 function Default() {
+    const {isVisible} = useContext(NewsTickerContext) as NewsTickerContextType;
     return (
         <div>
             <TasksList/>
-            {true ? (
+            {isVisible ? (
                 <NewsTicker/>
             ) : <></>}
         </div>

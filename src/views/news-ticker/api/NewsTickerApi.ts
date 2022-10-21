@@ -4,7 +4,7 @@ import {AxiosError, AxiosResponse} from "axios";
 
 export default class NewsTickerApi {
     static readonly URL_NEWS =
-        '/everything?q=tesla&from=2022-09-20&sortBy=publishedAt&apiKey=f73ef60816864fca98923f99ef65246f';
+        '/everything?q=tesla&from=2022-10-21&sortBy=publishedAt&apiKey=f73ef60816864fca98923f99ef65246f';
 
     static getNews(): Promise<News.Response> {
         return new Promise((resolve, reject) => {

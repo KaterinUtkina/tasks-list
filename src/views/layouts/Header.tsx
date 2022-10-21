@@ -18,6 +18,7 @@ function Header() {
         settingsClickHandler,
         handleClose,
         handleChange,
+        isVisible,
     } = useHeader();
 
     return (
@@ -35,7 +36,7 @@ function Header() {
                     <DialogContent className={"header__settings-dialog-content"}>
                         <span>Newsline visibility</span>
                         <Switch
-                            checked={true}
+                            checked={isVisible}
                             onChange={handleChange}
                             className={"custom-switch"}/>
                     </DialogContent>

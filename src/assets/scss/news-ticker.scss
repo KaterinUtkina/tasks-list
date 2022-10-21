@@ -6,6 +6,15 @@
     height: 38px;
     background-color: #F4F4F4;
 
+    &.is-loading {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        color: black;
+    }
+
     &__content {
         display: flex;
         animation: news-ticker-animation 3000s infinite linear;
